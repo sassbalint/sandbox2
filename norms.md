@@ -1,3 +1,17 @@
+Két dimenzióban dolgozunk.
+
+_vektor:_ egy nyíl a koordinátarendszerben _ábra_ == egy számpár ![eq](http://latex.codecogs.com/png.latex?(2,3))
+
+_norma:_ megmondja, hogy egy vektor mekkora.
+
+_normalizálás:_ a vektort (koordinátánként) elosztjuk a normával, így a méretét "elimináljuk" :arrow_right: marad az _iránya_
+
+
+
+
+
+
+
 ![eq](http://latex.codecogs.com/png.latex?L_1)
 
 ![eq](http://latex.codecogs.com/png.latex?D%28S%28Wx+b%29,L%29)
