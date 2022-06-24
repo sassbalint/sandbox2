@@ -1,21 +1,17 @@
+### vektorok, normák, valószínűségi eloszlás
+
 Két dimenzióban dolgozunk.
 
-_vektor:_ egy nyíl a koordinátarendszerben _ábra_ == egy számpár ![eq](http://latex.codecogs.com/png.latex?(2,3))
+* _vektor:_ (geometriailag) egy "nyíl" a koordinátarendszerben, ami (algebrailag) egy sima számpár, pl: ![eq](http://latex.codecogs.com/png.latex?v=(3,2))
 
-_norma:_ megmondja, hogy egy vektor mekkora.
+* _norma:_ megmondja, hogy egy vektor "mekkora", ez sokféleképpen érthető, ezért sokféle norma van, alább ![eq](http://latex.codecogs.com/png.latex?L_i)-vel jelöljük őket
 
-_normalizálás:_ a vektort (koordinátánként) elosztjuk a normával, így a méretét "elimináljuk" :arrow_right: marad az _iránya_
+* _normalizálás:_ a vektort (koordinátánként) elosztjuk a normával, azaz a méretével, így a mérete 1 lesz, azaz _egységvektort_ kapunk, a tehát méretét "elimináljuk" :arrow_right: marad az _iránya_
 
+|név|képlet|![eq](http://latex.codecogs.com/png.latex?L_i(v))|egységvektor|intuitíve|
+|--|--|--|--|--:|
+|![eq](http://latex.codecogs.com/png.latex?L_1), Manhattan, taxi|![eq](http://latex.codecogs.com/png.latex?L_1(x)=\sum{x_i})|![eq](http://latex.codecogs.com/png.latex?L_1(v)=3+2=5)|![eq](http://latex.codecogs.com/png.latex?\left(\frac35,\frac25\right))|összeg = 1|
+|![eq](http://latex.codecogs.com/png.latex?L_2), euklidészi, Frobenius|![eq](http://latex.codecogs.com/png.latex?L_2(x)=\sqrt{\sum{x_i^2}})|![eq](http://latex.codecogs.com/png.latex?L_2(v)=\sqrt{3^2+2^2}=\sqrt{13})|![eq](http://latex.codecogs.com/png.latex?\left(\frac{3}{\sqrt{13}},\frac{2}{\sqrt{13}}\right))|hossz = 1|
+|![eq](http://latex.codecogs.com/png.latex?L_\infty), max, Csebisev, sakktábla|![eq](http://latex.codecogs.com/png.latex?L_\infty(x)=\max\\\{x_i\\\})|![eq](http://latex.codecogs.com/png.latex?L_\infty(v)=\max\\\{3,2\\\}=3)|![eq](http://latex.codecogs.com/png.latex?\left(1,\frac23\right))|max = 1|
 
-
-
-
-
-
-![eq](http://latex.codecogs.com/png.latex?L_1)
-
-![eq](http://latex.codecogs.com/png.latex?D%28S%28Wx+b%29,L%29)
-
-![eq](http://latex.codecogs.com/png.latex?LOSS%20=%20\frac{1}{N}%20\sum_i%20D%28S%28Wx_i+b%29,L_i%29)
-
-![eq](http://latex.codecogs.com/png.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a})
+__Megfigyelés:__ ![eq](http://latex.codecogs.com/png.latex?L_1) norma esetén az egységvektor értékeinek összege 1, azaz az egységvektor egy diszkrét valószínűségi eloszlás lesz (vagy legalábbis értelmezhető akként), azaz _az ![eq](http://latex.codecogs.com/png.latex?L_1) norma "valószínűségi eloszlásra" normalizál._ (Azaz értelmezhető a valószínűségi eloszlások "iránya", ill. az összes valószínűségi eloszlás a valahány dimenziós origó közepű "gyémánt" felszínén helyezkedik el...)
